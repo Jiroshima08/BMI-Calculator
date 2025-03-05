@@ -21,9 +21,9 @@
         <div class="main-content">
             <h1> BMI Calculator </h1>
             <p><em> Your Personalized Calculator. </em></p>
-            <input type="text" class="text_fld" placeholder="Input weight (kg)..." id="weight">
+            <input type="text" class="text_fld" placeholder="Input weight in kg..." id="weight">
             <br><br>
-            <input type="text" class="text_fld" placeholder="Input height (m)..." id="height">
+            <input type="text" class="text_fld" placeholder="Input height in cm..." id="height">
             <br><br>
             <a href="#"  class="btn" onclick="getInputValue();">Continue</a>
     </section>
@@ -33,19 +33,23 @@
         
         let weight = document.getElementById("weight").value;
         let height = document.getElementById("height").value;
-        let bmi = weight / (height * height);
+        let bmi = weight / ((height / 100) * (height / 100));
         
-        if (bmi < 18.4) {
-            alert("Your BMI is: " + bmi + " Your Category is: Underweight");            
+        if (bmi < 18.4) { 
+            alert("Your BMI is: " + bmi);
+            alert("RESULT: UNDERWEIGHT"); 
 
         } else if (bmi >= 18.5 && bmi <= 24.9) {
-            alert("Your BMI is: " + bmi + " Your Category is: Normal"); 
+            alert("Your BMI is: " + bmi);
+            alert("RESULT: NORMAL"); 
 
         } else if (bmi >= 25.0 && bmi <= 39.9) {
-            alert("Your BMI is: " + bmi + " Your Category is: Overweight"); 
+            alert("Your BMI is: " + bmi);
+            alert("RESULT: OVERWEIGHT"); 
 
         } else {
-            alert("Your BMI is: " + bmi + " Your Category is: Obese"); 
+            alert("Your BMI is: " + bmi);
+            alert("RESULT: OBESE"); 
         }
     }   
     </script>
