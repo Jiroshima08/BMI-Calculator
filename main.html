@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navigation_bar">
+            <div class="logo">BMI</div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="main-content">
+            <h1> BMI Calculator </h1>
+            <p><em> Your Personalized Calculator. </em></p>
+            <input type="text" class="text_fld" placeholder="Input weight (kg)..." id="weight">
+            <br><br>
+            <input type="text" class="text_fld" placeholder="Input height (m)..." id="height">
+            <br><br>
+            <a href="#"  class="btn" onclick="getInputValue();">Continue</a>
+    </section>
+
+    <script>
+        function getInputValue() {
+        
+        let weight = document.getElementById("weight").value;
+        let height = document.getElementById("height").value;
+        let bmi = weight / (height * height);
+        
+        if (bmi < 18.4) {
+            alert("Your BMI is: " + bmi + " Your Category is: Underweight");            
+
+        } else if (bmi >= 18.5 && bmi <= 24.9) {
+            alert("Your BMI is: " + bmi + " Your Category is: Normal"); 
+
+        } else if (bmi >= 25.0 && bmi <= 39.9) {
+            alert("Your BMI is: " + bmi + " Your Category is: Overweight"); 
+
+        } else {
+            alert("Your BMI is: " + bmi + " Your Category is: Obese"); 
+        }
+    }   
+    </script>
+    </div>
+    </section>
+</body>
+</html>
