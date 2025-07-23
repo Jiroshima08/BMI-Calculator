@@ -17,3 +17,12 @@ A simple and responsive Body Mass Index (BMI) calculator built during our **Fund
 ## 📌 Purpose
 
 This project was created as part of our hands-on learning to apply core web development concepts in a practical setting.
+
+---
+
+## 👨‍💻 Author
+
+**Gyro Vinz L. Sagal**  
+Bachelor of Science in Information Technology
+
+---
