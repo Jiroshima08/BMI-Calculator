@@ -1,4 +1,4 @@
-# BMI Calculator
+# BMI Lite – No Backend, Just JavaScript
 
 A simple and responsive Body Mass Index (BMI) calculator built during our **Fundamentals of Web Development** laboratory session. This project demonstrates basic web development skills using HTML, CSS, and JavaScript.
 
